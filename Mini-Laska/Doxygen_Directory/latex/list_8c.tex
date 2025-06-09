@@ -1,0 +1,127 @@
+\hypertarget{list_8c}{}\doxysection{Riferimenti per il file list.\+c}
+\label{list_8c}\index{list.c@{list.c}}
+
+
+Funzioni per implementare le liste.  
+
+
+{\ttfamily \#include \char`\"{}list.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Grafo delle dipendenze di inclusione per list.\+c\+:
+% FIG 0
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structnode}{list}} \mbox{\hyperlink{list_8c_a01847019a8e9df8564ca1e9255e6e6ea}{crea\+\_\+lista\+\_\+vuota}} ()
+\item 
+\mbox{\hyperlink{structnode}{list}} \mbox{\hyperlink{list_8c_aa89f565b4634920595c25ec967364cd1}{crea\+\_\+lista}} (int x)
+\item 
+void \mbox{\hyperlink{list_8c_a96fb174543ed1422bc03e93c565a36ba}{stampa}} (\mbox{\hyperlink{structnode}{list}} l)
+\item 
+struct \mbox{\hyperlink{structnode}{node}} $\ast$ \mbox{\hyperlink{list_8c_aa07c7d851d430771b53fa94752b5b070}{push\+\_\+back}} (struct \mbox{\hyperlink{structnode}{node}} $\ast$l, int x)
+\item 
+int \mbox{\hyperlink{list_8c_ac23d41a05e50c4710a468a0667ed6f5e}{schrodinger\+\_\+list}} (\mbox{\hyperlink{structnode}{list}} l, int x)
+\item 
+void \mbox{\hyperlink{list_8c_ade57c19692bc820b1ee15256a5421cc5}{free\+\_\+lista}} (\mbox{\hyperlink{structnode}{list}} l)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Funzioni per implementare le liste. 
+
+\begin{DoxyAuthor}{Autore}
+Filippo, Aresù e Dumitru 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{list_8c_aa89f565b4634920595c25ec967364cd1}\label{list_8c_aa89f565b4634920595c25ec967364cd1}} 
+\index{list.c@{list.c}!crea\_lista@{crea\_lista}}
+\index{crea\_lista@{crea\_lista}!list.c@{list.c}}
+\doxysubsubsection{\texorpdfstring{crea\_lista()}{crea\_lista()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnode}{list}} crea\+\_\+lista (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+Crea lista con un intero
+
+
+\begin{DoxyParams}{Parametri}
+{\em x} & elemento (intero) della lista \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+ritorna la lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{list_8c_a01847019a8e9df8564ca1e9255e6e6ea}\label{list_8c_a01847019a8e9df8564ca1e9255e6e6ea}} 
+\index{list.c@{list.c}!crea\_lista\_vuota@{crea\_lista\_vuota}}
+\index{crea\_lista\_vuota@{crea\_lista\_vuota}!list.c@{list.c}}
+\doxysubsubsection{\texorpdfstring{crea\_lista\_vuota()}{crea\_lista\_vuota()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structnode}{list}} crea\+\_\+lista\+\_\+vuota (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Crea lista vuota
+
+\begin{DoxyReturn}{Restituisce}
+ritorna la lista vuota 
+\end{DoxyReturn}
+\mbox{\Hypertarget{list_8c_ade57c19692bc820b1ee15256a5421cc5}\label{list_8c_ade57c19692bc820b1ee15256a5421cc5}} 
+\index{list.c@{list.c}!free\_lista@{free\_lista}}
+\index{free\_lista@{free\_lista}!list.c@{list.c}}
+\doxysubsubsection{\texorpdfstring{free\_lista()}{free\_lista()}}
+{\footnotesize\ttfamily void free\+\_\+lista (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{list}}}]{l }\end{DoxyParamCaption})}
+
+Elimina la lista
+
+
+\begin{DoxyParams}{Parametri}
+{\em l} & lista da eliminare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{list_8c_aa07c7d851d430771b53fa94752b5b070}\label{list_8c_aa07c7d851d430771b53fa94752b5b070}} 
+\index{list.c@{list.c}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!list.c@{list.c}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structnode}{node}}$\ast$ push\+\_\+back (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structnode}{node}} $\ast$}]{l,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+Aggiunge in coda elemento alla lista
+
+
+\begin{DoxyParams}{Parametri}
+{\em l} & lista \\
+\hline
+{\em x} & elemento da aggiungere\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+ritorna la lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{list_8c_ac23d41a05e50c4710a468a0667ed6f5e}\label{list_8c_ac23d41a05e50c4710a468a0667ed6f5e}} 
+\index{list.c@{list.c}!schrodinger\_list@{schrodinger\_list}}
+\index{schrodinger\_list@{schrodinger\_list}!list.c@{list.c}}
+\doxysubsubsection{\texorpdfstring{schrodinger\_list()}{schrodinger\_list()}}
+{\footnotesize\ttfamily int schrodinger\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{list}}}]{l,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+Cerca all\textquotesingle{}interno della lista un intero
+
+
+\begin{DoxyParams}{Parametri}
+{\em l} & lista \\
+\hline
+{\em x} & intero da trovare\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+ritorna 1 se viene trovato l\textquotesingle{}elemento, altrimenti 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{list_8c_a96fb174543ed1422bc03e93c565a36ba}\label{list_8c_a96fb174543ed1422bc03e93c565a36ba}} 
+\index{list.c@{list.c}!stampa@{stampa}}
+\index{stampa@{stampa}!list.c@{list.c}}
+\doxysubsubsection{\texorpdfstring{stampa()}{stampa()}}
+{\footnotesize\ttfamily void stampa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structnode}{list}}}]{l }\end{DoxyParamCaption})}
+
+Stampa la lista
+
+
+\begin{DoxyParams}{Parametri}
+{\em l} & lista \\
+\hline
+\end{DoxyParams}

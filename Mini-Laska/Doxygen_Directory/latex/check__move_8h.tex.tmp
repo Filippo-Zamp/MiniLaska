@@ -1,0 +1,35 @@
+\hypertarget{check__move_8h}{}\doxysection{Riferimenti per il file check\+\_\+move.\+h}
+\label{check__move_8h}\index{check\_move.h@{check\_move.h}}
+
+
+Funzioni che controllano se le pedine sono selezionabili, se hanno mangiate obbligatorie e se si possono muovere in determinate caselle.  
+
+
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
+Grafo delle dipendenze di inclusione per check\+\_\+move.\+h\+:
+% FIG 0
+Questo grafo mostra quali altri file includono direttamente o indirettamente questo file\+:
+% FIG 1
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{check__move_8h_a8bd1dc7da524fecdd060396fdc0c051f}\label{check__move_8h_a8bd1dc7da524fecdd060396fdc0c051f}} 
+void {\bfseries promotion} (int end\+\_\+x, int end\+\_\+y, int turn, \mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$pieces)
+\item 
+\mbox{\Hypertarget{check__move_8h_a766c297e8a6b0c0c0dc6fab0d9315901}\label{check__move_8h_a766c297e8a6b0c0c0dc6fab0d9315901}} 
+int {\bfseries check\+\_\+selection} (int x, int y, int turn, int $\ast$man\+\_\+move, \mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$pieces)
+\item 
+\mbox{\Hypertarget{check__move_8h_a88172a3230741351a32e7acad632ffc1}\label{check__move_8h_a88172a3230741351a32e7acad632ffc1}} 
+int {\bfseries mandatory\+\_\+selectable} (int turn, int coordinates, int $\ast$man\+\_\+move, \mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$pieces)
+\item 
+\mbox{\Hypertarget{check__move_8h_a85055bf989e02fe461131c1fce7049c0}\label{check__move_8h_a85055bf989e02fe461131c1fce7049c0}} 
+int {\bfseries check\+\_\+move} (int x, int y, int end\+\_\+x, int end\+\_\+y, int turn, int $\ast$man\+\_\+move, \mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$pieces)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Funzioni che controllano se le pedine sono selezionabili, se hanno mangiate obbligatorie e se si possono muovere in determinate caselle. 
+
+\begin{DoxyAuthor}{Autore}
+Filippo, Aresù e Dumitru 
+\end{DoxyAuthor}

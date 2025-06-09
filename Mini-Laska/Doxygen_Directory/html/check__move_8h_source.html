@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MINI-LASKA:  File sorgente check_move.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MINI-LASKA
+   </div>
+   <div id="projectbrief">By-Zampiron-Zotea-SadeghiGol</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">check_move.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="check__move_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef PROGETTO_MINILASKA_CHECK_MOVE_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define PROGETTO_MINILASKA_CHECK_MOVE_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="struct_8h.html">struct.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="check__move_8h.html#a8bd1dc7da524fecdd060396fdc0c051f">promotion</a>( <span class="keywordtype">int</span> end_x, <span class="keywordtype">int</span> end_y, <span class="keywordtype">int</span> turn, <a class="code" href="structpiece.html">piece_t</a> *pieces);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">int</span> <a class="code" href="check__move_8h.html#a766c297e8a6b0c0c0dc6fab0d9315901">check_selection</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> turn, <span class="keywordtype">int</span>* man_move, <a class="code" href="structpiece.html">piece_t</a> *pieces);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">int</span> <a class="code" href="check__move_8h.html#a88172a3230741351a32e7acad632ffc1">mandatory_selectable</a>(<span class="keywordtype">int</span> turn, <span class="keywordtype">int</span> coordinates, <span class="keywordtype">int</span>* man_move, <a class="code" href="structpiece.html">piece_t</a> *pieces);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">int</span> <a class="code" href="check__move_8h.html#a85055bf989e02fe461131c1fce7049c0">check_move</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, <span class="keywordtype">int</span> end_x, <span class="keywordtype">int</span> end_y, <span class="keywordtype">int</span> turn, <span class="keywordtype">int</span>* man_move, <a class="code" href="structpiece.html">piece_t</a> *pieces);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif //PROGETTO_MINILASKA_CHECK_MOVE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="acheck__move_8h_html_a88172a3230741351a32e7acad632ffc1"><div class="ttname"><a href="check__move_8h.html#a88172a3230741351a32e7acad632ffc1">mandatory_selectable</a></div><div class="ttdeci">int mandatory_selectable(int turn, int coordinates, int *man_move, piece_t *pieces)</div><div class="ttdef"><b>Definition:</b> check_move.c:117</div></div>
+<div class="ttc" id="acheck__move_8h_html_a85055bf989e02fe461131c1fce7049c0"><div class="ttname"><a href="check__move_8h.html#a85055bf989e02fe461131c1fce7049c0">check_move</a></div><div class="ttdeci">int check_move(int x, int y, int end_x, int end_y, int turn, int *man_move, piece_t *pieces)</div><div class="ttdef"><b>Definition:</b> check_move.c:275</div></div>
+<div class="ttc" id="astructpiece_html"><div class="ttname"><a href="structpiece.html">piece</a></div><div class="ttdef"><b>Definition:</b> struct.h:11</div></div>
+<div class="ttc" id="acheck__move_8h_html_a8bd1dc7da524fecdd060396fdc0c051f"><div class="ttname"><a href="check__move_8h.html#a8bd1dc7da524fecdd060396fdc0c051f">promotion</a></div><div class="ttdeci">void promotion(int end_x, int end_y, int turn, piece_t *pieces)</div><div class="ttdef"><b>Definition:</b> check_move.c:24</div></div>
+<div class="ttc" id="astruct_8h_html"><div class="ttname"><a href="struct_8h.html">struct.h</a></div><div class="ttdoc">Struct delle pedine.</div></div>
+<div class="ttc" id="acheck__move_8h_html_a766c297e8a6b0c0c0dc6fab0d9315901"><div class="ttname"><a href="check__move_8h.html#a766c297e8a6b0c0c0dc6fab0d9315901">check_selection</a></div><div class="ttdeci">int check_selection(int x, int y, int turn, int *man_move, piece_t *pieces)</div><div class="ttdef"><b>Definition:</b> check_move.c:49</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

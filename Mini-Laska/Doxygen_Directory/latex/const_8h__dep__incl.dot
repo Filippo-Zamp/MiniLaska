@@ -1,0 +1,17 @@
+digraph "const.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="const.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Costanti utilizzate nel progetto."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="check_move.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$check__move_8c.html",tooltip="Funzioni che controllano se le pedine sono selezionabili, se hanno mangiate obbligatorie e se si poss..."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="main.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html",tooltip="MAIN."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="move.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$move_8c.html",tooltip="Funzione che permette di far muovere le pedine."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="print.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$print_8c.html",tooltip="Funzioni che stampano la tavola da gioco con le pedine."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="turno.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$turno_8c.html",tooltip="Funzione che permette di cambiare turno."];
+}

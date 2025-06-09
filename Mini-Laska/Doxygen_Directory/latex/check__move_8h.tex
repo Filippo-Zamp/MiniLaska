@@ -1,0 +1,118 @@
+\hypertarget{check__move_8h}{}\doxysection{Riferimenti per il file check\+\_\+move.\+h}
+\label{check__move_8h}\index{check\_move.h@{check\_move.h}}
+
+
+Libreria che controlla se le pedine sono selezionabili, se hanno mangiate obbligatorie e se si possono muovere in determinate caselle.  
+
+
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
+Grafo delle dipendenze di inclusione per check\+\_\+move.\+h\+:
+% FIG 0
+Questo grafo mostra quali altri file includono direttamente o indirettamente questo file\+:
+% FIG 1
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{check__move_8h_a8bd1dc7da524fecdd060396fdc0c051f}{promotion}} (int end\+\_\+x, int end\+\_\+y, int turn, \mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$pieces)
+\item 
+int \mbox{\hyperlink{check__move_8h_a766c297e8a6b0c0c0dc6fab0d9315901}{check\+\_\+selection}} (int x, int y, int turn, int $\ast$man\+\_\+move, \mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$pieces)
+\item 
+int \mbox{\hyperlink{check__move_8h_a88172a3230741351a32e7acad632ffc1}{mandatory\+\_\+selectable}} (int turn, int coordinates, int $\ast$man\+\_\+move, \mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$pieces)
+\item 
+int \mbox{\hyperlink{check__move_8h_a85055bf989e02fe461131c1fce7049c0}{check\+\_\+move}} (int x, int y, int end\+\_\+x, int end\+\_\+y, int turn, int $\ast$man\+\_\+move, \mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$pieces)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Libreria che controlla se le pedine sono selezionabili, se hanno mangiate obbligatorie e se si possono muovere in determinate caselle. 
+
+\begin{DoxyAuthor}{Autore}
+Filippo, Aresù e Dumitru 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{check__move_8h_a85055bf989e02fe461131c1fce7049c0}\label{check__move_8h_a85055bf989e02fe461131c1fce7049c0}} 
+\index{check\_move.h@{check\_move.h}!check\_move@{check\_move}}
+\index{check\_move@{check\_move}!check\_move.h@{check\_move.h}}
+\doxysubsubsection{\texorpdfstring{check\_move()}{check\_move()}}
+{\footnotesize\ttfamily int check\+\_\+move (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{end\+\_\+x,  }\item[{int}]{end\+\_\+y,  }\item[{int}]{turn,  }\item[{int $\ast$}]{man\+\_\+move,  }\item[{\mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$}]{pieces }\end{DoxyParamCaption})}
+
+Controllo delle coordinate selezionate dal giocatore, se non sono valide potranno essere reinserite subito dopo
+
+
+\begin{DoxyParams}{Parametri}
+{\em x} & coordinate della cella di partenza \\
+\hline
+{\em y} & coordinate della cella di partenza \\
+\hline
+{\em end\+\_\+x} & coordinate della cella d\textquotesingle{}arrivo \\
+\hline
+{\em end\+\_\+y} & coordinate della cella d\textquotesingle{}arrivo \\
+\hline
+{\em turn} & turno del giocatore \\
+\hline
+{\em man\+\_\+move} & mangiata obbligatoria \\
+\hline
+{\em pieces} & pedine \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{check__move_8h_a766c297e8a6b0c0c0dc6fab0d9315901}\label{check__move_8h_a766c297e8a6b0c0c0dc6fab0d9315901}} 
+\index{check\_move.h@{check\_move.h}!check\_selection@{check\_selection}}
+\index{check\_selection@{check\_selection}!check\_move.h@{check\_move.h}}
+\doxysubsubsection{\texorpdfstring{check\_selection()}{check\_selection()}}
+{\footnotesize\ttfamily int check\+\_\+selection (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{turn,  }\item[{int $\ast$}]{man\+\_\+move,  }\item[{\mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$}]{pieces }\end{DoxyParamCaption})}
+
+Funzione principale che controlla se le pedine sono selezionabili, se hanno mangiate obbligatorie e se si possono muovere in determinate caselle (chiamando le altre funzioni)
+
+
+\begin{DoxyParams}{Parametri}
+{\em x} & coordinate della cella \\
+\hline
+{\em y} & coordinate della cella \\
+\hline
+{\em turn} & turno del giocatore \\
+\hline
+{\em man\+\_\+move} & mangiata obbligatoria \\
+\hline
+{\em pieces} & pedine \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{check__move_8h_a88172a3230741351a32e7acad632ffc1}\label{check__move_8h_a88172a3230741351a32e7acad632ffc1}} 
+\index{check\_move.h@{check\_move.h}!mandatory\_selectable@{mandatory\_selectable}}
+\index{mandatory\_selectable@{mandatory\_selectable}!check\_move.h@{check\_move.h}}
+\doxysubsubsection{\texorpdfstring{mandatory\_selectable()}{mandatory\_selectable()}}
+{\footnotesize\ttfamily int mandatory\+\_\+selectable (\begin{DoxyParamCaption}\item[{int}]{turn,  }\item[{int}]{coordinates,  }\item[{int $\ast$}]{man\+\_\+move,  }\item[{\mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$}]{pieces }\end{DoxyParamCaption})}
+
+Controllo se la pedina è selezionabile e se il giocatore ha delle mangiate obbligatorie da eseguire
+
+
+\begin{DoxyParams}{Parametri}
+{\em coordinates} & coordinate della cella \\
+\hline
+{\em turn} & turno del giocatore \\
+\hline
+{\em man\+\_\+move} & mangiata obbligatoria \\
+\hline
+{\em pieces} & pedine \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{check__move_8h_a8bd1dc7da524fecdd060396fdc0c051f}\label{check__move_8h_a8bd1dc7da524fecdd060396fdc0c051f}} 
+\index{check\_move.h@{check\_move.h}!promotion@{promotion}}
+\index{promotion@{promotion}!check\_move.h@{check\_move.h}}
+\doxysubsubsection{\texorpdfstring{promotion()}{promotion()}}
+{\footnotesize\ttfamily void promotion (\begin{DoxyParamCaption}\item[{int}]{end\+\_\+x,  }\item[{int}]{end\+\_\+y,  }\item[{int}]{turn,  }\item[{\mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$}]{pieces }\end{DoxyParamCaption})}
+
+Promozione pedine quando una torre raggiunge l\textquotesingle{}estremità opposta della tavola, da quel momento la pedina può muoversi sia avanti che indietro
+
+
+\begin{DoxyParams}{Parametri}
+{\em end\+\_\+x} & coordinate della cella d\textquotesingle{}arrivo \\
+\hline
+{\em end\+\_\+y} & coordinate della cella d\textquotesingle{}arrivo \\
+\hline
+{\em turn} & turno del giocatore \\
+\hline
+{\em pieces} & pedine \\
+\hline
+\end{DoxyParams}

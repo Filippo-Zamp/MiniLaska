@@ -1,0 +1,84 @@
+\hypertarget{print_8c}{}\doxysection{Riferimenti per il file print.\+c}
+\label{print_8c}\index{print.c@{print.c}}
+
+
+Funzioni che stampano la tavola da gioco con le pedine.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}const.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}print.\+h\char`\"{}}\newline
+Grafo delle dipendenze di inclusione per print.\+c\+:
+% FIG 0
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{print_8c_aef5dfaa4d1fb976978ba4f529a54157c}{print\+\_\+board\+\_\+low\+\_\+line}} (int dim)
+\item 
+void \mbox{\hyperlink{print_8c_a5025315780bb7af0c9c4106163f2e827}{print\+\_\+board\+\_\+up\+\_\+line}} (const int dim)
+\item 
+void \mbox{\hyperlink{print_8c_aa531e12c8857ed412230e56918f4b001}{print\+\_\+board\+\_\+up\+\_\+numbers}} ()
+\item 
+void \mbox{\hyperlink{print_8c_aeaa7d20de3a4c1393c2debe588b19bca}{print\+\_\+board}} (\mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$pieces, const int dim)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Funzioni che stampano la tavola da gioco con le pedine. 
+
+\begin{DoxyAuthor}{Autore}
+Filippo, Aresù e Dumitru 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{print_8c_aeaa7d20de3a4c1393c2debe588b19bca}\label{print_8c_aeaa7d20de3a4c1393c2debe588b19bca}} 
+\index{print.c@{print.c}!print\_board@{print\_board}}
+\index{print\_board@{print\_board}!print.c@{print.c}}
+\doxysubsubsection{\texorpdfstring{print\_board()}{print\_board()}}
+{\footnotesize\ttfamily void print\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$}]{pieces,  }\item[{const int}]{dim }\end{DoxyParamCaption})}
+
+Genera l\textquotesingle{}intera scacchiera
+
+
+\begin{DoxyParams}{Parametri}
+{\em dim} & dimensione delle celle \\
+\hline
+{\em pieces} & pedine \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{print_8c_aef5dfaa4d1fb976978ba4f529a54157c}\label{print_8c_aef5dfaa4d1fb976978ba4f529a54157c}} 
+\index{print.c@{print.c}!print\_board\_low\_line@{print\_board\_low\_line}}
+\index{print\_board\_low\_line@{print\_board\_low\_line}!print.c@{print.c}}
+\doxysubsubsection{\texorpdfstring{print\_board\_low\_line()}{print\_board\_low\_line()}}
+{\footnotesize\ttfamily void print\+\_\+board\+\_\+low\+\_\+line (\begin{DoxyParamCaption}\item[{int}]{dim }\end{DoxyParamCaption})}
+
+Genera riga in basso della scacchiera
+
+
+\begin{DoxyParams}{Parametri}
+{\em dim} & larghezza linea \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{print_8c_a5025315780bb7af0c9c4106163f2e827}\label{print_8c_a5025315780bb7af0c9c4106163f2e827}} 
+\index{print.c@{print.c}!print\_board\_up\_line@{print\_board\_up\_line}}
+\index{print\_board\_up\_line@{print\_board\_up\_line}!print.c@{print.c}}
+\doxysubsubsection{\texorpdfstring{print\_board\_up\_line()}{print\_board\_up\_line()}}
+{\footnotesize\ttfamily void print\+\_\+board\+\_\+up\+\_\+line (\begin{DoxyParamCaption}\item[{const int}]{dim }\end{DoxyParamCaption})}
+
+Genera linea in alto alla scacchiera
+
+
+\begin{DoxyParams}{Parametri}
+{\em dim} & larghezza linea \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{print_8c_aa531e12c8857ed412230e56918f4b001}\label{print_8c_aa531e12c8857ed412230e56918f4b001}} 
+\index{print.c@{print.c}!print\_board\_up\_numbers@{print\_board\_up\_numbers}}
+\index{print\_board\_up\_numbers@{print\_board\_up\_numbers}!print.c@{print.c}}
+\doxysubsubsection{\texorpdfstring{print\_board\_up\_numbers()}{print\_board\_up\_numbers()}}
+{\footnotesize\ttfamily void print\+\_\+board\+\_\+up\+\_\+numbers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Genera numeri in alto alla scacchiera per indicare le caselle 

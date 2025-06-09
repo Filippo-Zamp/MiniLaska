@@ -1,0 +1,51 @@
+\hypertarget{move_8c}{}\doxysection{Riferimenti per il file move.\+c}
+\label{move_8c}\index{move.c@{move.c}}
+
+
+Funzione che permette di far muovere le pedine.  
+
+
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}move.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}const.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pop\+\_\+array.\+h\char`\"{}}\newline
+Grafo delle dipendenze di inclusione per move.\+c\+:
+% FIG 0
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{move_8c_a333d5d66a6edb9945e195e32454dafa0}{move}} (int x, int y, int end\+\_\+x, int end\+\_\+y, \mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$pieces)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Funzione che permette di far muovere le pedine. 
+
+\begin{DoxyAuthor}{Autore}
+Filippo, Aresù e Dumitru 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{move_8c_a333d5d66a6edb9945e195e32454dafa0}\label{move_8c_a333d5d66a6edb9945e195e32454dafa0}} 
+\index{move.c@{move.c}!move@{move}}
+\index{move@{move}!move.c@{move.c}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void move (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{end\+\_\+x,  }\item[{int}]{end\+\_\+y,  }\item[{\mbox{\hyperlink{structpiece}{piece\+\_\+t}} $\ast$}]{pieces }\end{DoxyParamCaption})}
+
+Permette di far muovere le pedine all\textquotesingle{}interno della scacchiera ed è integrata la mangiata di pedine
+
+
+\begin{DoxyParams}{Parametri}
+{\em x} & coordinate iniziali (di partenza) \\
+\hline
+{\em y} & coordinate iniziali (di partenza) \\
+\hline
+{\em end\+\_\+x} & coordinate finali (di destinazione) \\
+\hline
+{\em end\+\_\+y} & coordinate finali (di destinazione) \\
+\hline
+{\em pieces} & pedina \\
+\hline
+\end{DoxyParams}

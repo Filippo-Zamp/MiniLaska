@@ -1,0 +1,70 @@
+\hypertarget{menu_8c}{}\doxysection{Riferimenti per il file menu.\+c}
+\label{menu_8c}\index{menu.c@{menu.c}}
+
+
+Funzioni per il menu del gioco.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}menu.\+h\char`\"{}}\newline
+Grafo delle dipendenze di inclusione per menu.\+c\+:
+% FIG 0
+\doxysubsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{menu_8c_a55528ce3502c1ba485e04f6cf3a4a968}{title}} ()
+\item 
+void \mbox{\hyperlink{menu_8c_ac2bf81c8d178fb8a48f3115c0d630fe6}{rules}} ()
+\item 
+int \mbox{\hyperlink{menu_8c_a6690b9e5d31f47035f0385c6f9699949}{mode}} ()
+\item 
+void \mbox{\hyperlink{menu_8c_a1e456bfd9c470c956bbcb9af4aacaa97}{menu}} (int $\ast$status)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrizione dettagliata}
+Funzioni per il menu del gioco. 
+
+\begin{DoxyAuthor}{Autore}
+Filippo, Aresù e Dumitru 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{menu_8c_a1e456bfd9c470c956bbcb9af4aacaa97}\label{menu_8c_a1e456bfd9c470c956bbcb9af4aacaa97}} 
+\index{menu.c@{menu.c}!menu@{menu}}
+\index{menu@{menu}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}\item[{int $\ast$}]{status }\end{DoxyParamCaption})}
+
+Funzione principale del menù
+
+
+\begin{DoxyParams}{Parametri}
+{\em status} & stato che permette di muoversi all\textquotesingle{}inteno del menù \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8c_a6690b9e5d31f47035f0385c6f9699949}\label{menu_8c_a6690b9e5d31f47035f0385c6f9699949}} 
+\index{menu.c@{menu.c}!mode@{mode}}
+\index{mode@{mode}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{mode()}{mode()}}
+{\footnotesize\ttfamily int mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stampa a schermo e permette di scegliere le modalità di gioco
+
+\begin{DoxyReturn}{Restituisce}
+ritorna la scelata fatta dal giocatore 
+\end{DoxyReturn}
+\mbox{\Hypertarget{menu_8c_ac2bf81c8d178fb8a48f3115c0d630fe6}\label{menu_8c_ac2bf81c8d178fb8a48f3115c0d630fe6}} 
+\index{menu.c@{menu.c}!rules@{rules}}
+\index{rules@{rules}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{rules()}{rules()}}
+{\footnotesize\ttfamily void rules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stampa a schermo le regole del gioco \char`\"{}\+Minilaska\char`\"{} \mbox{\Hypertarget{menu_8c_a55528ce3502c1ba485e04f6cf3a4a968}\label{menu_8c_a55528ce3502c1ba485e04f6cf3a4a968}} 
+\index{menu.c@{menu.c}!title@{title}}
+\index{title@{title}!menu.c@{menu.c}}
+\doxysubsubsection{\texorpdfstring{title()}{title()}}
+{\footnotesize\ttfamily void title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Stampa a schermo il titolo \char`\"{}\+M\+I\+N\+I\+L\+A\+S\+K\+A\char`\"{} 
