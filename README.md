@@ -1,7 +1,9 @@
 # MiniLaska
 
 > Progetto universitario di "Introduzione alla Programmazione"
+> 
 > Università Ca' Foscari Venezia – A.A. 2020/2021
+> 
 > Professori: Claudio Lucchese, Alvise Spanò
 
 ## 📌 Descrizione
