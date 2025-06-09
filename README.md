@@ -20,7 +20,7 @@ Il progetto è stato realizzato nell’ambito del corso "Introduzione alla Progr
 - 🤖 **Giocatore vs Computer** *(opzionale)*: è possibile implementare una strategia automatica per il computer, semplice o ricorsiva.
 
 ## 📁 Struttura del Progetto
-
+```
 miniLaska/
 ├── src/ # Codice sorgente
 │ ├── main.c # Entry point
@@ -32,7 +32,7 @@ miniLaska/
 ├── report/ # Relazione scritta
 ├── Makefile # Compilazione automatica
 └── README.md # Questo file
-
+```
 ## 🧪 Compilazione ed Esecuzione
 
 Per compilare il progetto, posizionarsi nella directory principale e digitare:
